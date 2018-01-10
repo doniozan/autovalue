@@ -1,0 +1,28 @@
+1. 
+Buka buat instalasi PHP,MySql dan composer 
+https://www.digitalocean.com/community/tutorials/how-to-upgrade-to-php-7-on-ubuntu-14-04
+
+2.
+Buat database untuk aplikasi dengan menggunakan MySql
+
+3.
+Buka Terminal
+-laravel new [nama Project]
+ke cd [nama project]
+-composer require tcg/voyager
+
+4.
+Buka Folder Project, masuk ke .env lalu ganti 
+APP_URL=http://localhost:8000
+DB_HOST=localhost
+DB_DATABASE=[nama database]
+DB_USERNAME=root
+DB_PASSWORD=
+
+5.
+lalu masuk terminal
+ke cd [nama project]
+-php artisan voyager:install --with-dummy
+kalo merah masuk ke root
+
+
